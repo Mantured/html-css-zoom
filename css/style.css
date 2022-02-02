@@ -26,6 +26,13 @@ i,p{
     align-items: center;
 }
 
+.direction-row{
+    flex-direction: row-reverse;
+}
+.flex-end{
+    justify-content: flex-end;
+}
+
 .btn{
     width: 5rem;
     height: 5rem;
@@ -37,28 +44,33 @@ i,p{
 .btn-active{
     color: rgba(75,201,1,255);
 }
+.between{
+    justify-content: space-between;
+}
+
+.around{
+    justify-content: space-around;
+}
+
+header section.tools, section.tools > p{
+    padding-right: 10px;
+}
+
 
 section.tools{
     width: 100%;
     height: 10vh;
     background-color: rgba(34,34,34,255);
     align-items: center;
-    justify-content: space-between;
     text-align: center;
-    /* align-items: center; */
-}
-
-#tools-left{ 
-    /* flex-basis: 50%; */
-    /* flex-direction: column; */
 }
 
 section div i:first-child{
     font-size: 2rem;
 }
 
-div#tools-right {
-    /* align-items: stretch; */
+div.setting-view i:only-child{
+    font-size: 1rem;
 }
 
 div.btn-redzone a {
