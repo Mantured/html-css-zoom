@@ -31,11 +31,12 @@ section.tools{
     height: 10vh;
     background-color: darkgoldenrod;
     align-items: center;
-/*     justify-content: space-between;
-    align-items: center; */
+    justify-content: space-between;
+    text-align: center;
+    /* align-items: center; */
 }
 
-#aside-left{ 
+#tools-left{ 
     /* flex-basis: 50%; */
     /* flex-direction: column; */
 }
