@@ -8,3 +8,45 @@
 body{
     font-family: 'Open Sans', sans-serif ;
 }
+
+p{
+    font-size: 0.8rem;
+}
+
+i,p{
+    color: rgba(255,254,254,255);
+}
+
+.flex-container{
+    display: flex;
+}
+
+.flex-centered{
+    justify-content: center;
+    align-items: center;
+}
+
+section.tools{
+    width: 100vw;
+    height: 10vh;
+    background-color: darkgoldenrod;
+    align-items: center;
+/*     justify-content: space-between;
+    align-items: center; */
+}
+
+#aside-left{ 
+    /* flex-basis: 50%; */
+    /* flex-direction: column; */
+}
+
+.btn{
+    width: 5rem;
+    height: 5rem;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+section div i:first-child{
+    font-size: 2rem;
+}
