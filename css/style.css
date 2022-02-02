@@ -9,6 +9,13 @@ body{
     font-family: 'Open Sans', sans-serif ;
 }
 
+main{
+    width: 100vw;
+    height: 80vh;
+    background-color: rgba(1,1,0,255);
+}
+
+
 p{
     font-size: 0.8rem;
 }
@@ -22,8 +29,9 @@ i,p{
 }
 
 .flex-centered{
-    justify-content: center;
     align-items: center;
+    justify-content: center;
+
 }
 
 .direction-row{
@@ -36,9 +44,9 @@ i,p{
 .btn{
     width: 5rem;
     height: 5rem;
+    margin-right: 0.5rem;
     flex-direction: column;
     justify-content: space-around;
-    margin-right: 0.5rem;
 }
 
 .btn-active{
@@ -52,76 +60,84 @@ i,p{
     justify-content: space-around;
 }
 
-header section.tools, section.tools > p{
-    padding-right: 10px;
+.relative{
+    position: relative;
 }
 
+header section.tools{
+    background-color: black;
+}
+
+div.setting-view{
+    padding: 4px 6px;
+    border-radius: 5px;
+    margin-right: 10px;
+    background-color: rgba(75,75,74,255);
+}
+
+div.setting-view i:first-child{
+    font-size: 1rem;
+}
+
+div.setting-view > p{
+    display: inline-flex;
+}
+
+div.users-cam{
+    /* flex-wrap: wrap; */
+    align-items: center;
+    object-fit: fill;
+    
+}
+
+div.users-cam > img{
+    width: 25vh;
+} 
+
+div.users-cam > p {
+    left:0;
+    bottom: 0;
+    position: absolute;
+    background-color: rgba(96, 112, 124, 0.6);
+}
+
+div.users-cam p i:first-of-type{
+    font-size: 1.2rem;
+}
 
 section.tools{
     width: 100%;
     height: 10vh;
-    background-color: rgba(34,34,34,255);
-    align-items: center;
     text-align: center;
+    align-items: center;
+    background-color: rgba(34,34,34,255);
 }
 
 section div i:first-child{
     font-size: 2rem;
 }
 
-div.setting-view i:only-child{
-    font-size: 1rem;
-}
-
 div.btn-redzone a {
+    color: red;
     width: 100%;
     height: 100%;
+    padding: 2rem;
     text-decoration: none;
     background-color: rgba(75,75,74,255);
-    color: red;
-    padding: 2rem;
-}
-
-
-main{
-    width: 100vw;
-    height: 80vh;
-    background-color: rgba(1,1,0,255);
 }
 
 #users{
-    background-color: rgba(1,1,0,255);
-    overflow-y: scroll;
     width: 80%;
     height: 90%;
     margin: auto;
-    flex-direction: row;
-    flex-wrap: wrap;
     gap: 16px 8px;
+    flex-basis: 100%;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    flex-direction: row; /* defaoult */
     justify-content: center;
+    background-color: rgba(1,1,0,255);
 }
 
-.users-cam{
-    flex-wrap: wrap;
-    
-}
 
-div.users-cam > img{
-    flex-wrap: wrap;
 
-} 
-
-.relative{
-    position: relative;
-}
-
-.users-cam > p {
-    position: absolute;
-    bottom: 0;
-    left:0;
-    background-color: rgba(96, 112, 124, 0.6);
-}
-
-.users-cam p i:first-of-type{
-    font-size: 1.2rem;
-}
